@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Practica10a</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="/home/vant/Escritorio/Pagina Web/CCS/hoja-estilonohome.css"/>
+    </head>
+    <header>
+        <ol>
+            <li><a href="practicafinal.html">Home</a></li>
+            <li class="seleccionado">Our Services and Prices</li>
+        </ol>
+    </header>
+    <body>
+        <nav>
+            <p><strong>Our Services and Prices</strong></p>
+            <table>
+            <tr>
+                <th>Vet Service</th><th>Take a Walk with a Dog</th><th>Talk a Walk with two Dogs or More</th><th>Visit at Home</th>
+            </tr>
+            <tr>
+                <td>50 Euros</td><td>60 Euros</td><td>90 Euros</td><td>100 Euros</td>
+            </tr>
+            </table>
+        </nav>
+        <p>Do you have any question about our services or prices?? Please ask us here:</p>
+        <nav>
+  <form method="post" action="miservidor.php">
+    <div>
+      <p>Personal information</p>    
+      <label for=”nombre”>Name:</label>
+      <input id=”nombre” type=”text”>
+    </div>
+    <div>
+      <label for=”ape1”>First Surname:</label>
+      <input id=”ape1” type=”text”>
+    </div>
+    <div>
+      <label for=”ape2”>Second Surname:</label>
+      <input id=”ape2” type=”text”>
+    </div>
+    <div>
+      <label for=”edad”>Age:</label>
+      <input id=”edad” type=”number”>
+    </div>
+    <div>
+      <label for=”lugar”>Birth Place:</label>
+      <input id=”lugar” type=”text”>
+   </div>
+      <div>
+      <label for=”postal”>Zip Code:</label>
+      <input id=”postal” type=”number”>
+   </div>
+   <div>
+      <label for=”pais”>Birth Country:</label>
+      <select id=”pais”>
+        <option value=”ES”>Spain</option>
+        <option value=”IT”>Italy</option>
+        <option value=”FR”>France</option>
+      </select>
+  </div>
+  <div>
+      <label for=”sexo”>Gender:</label>
+      <select id="sexo">
+       <option value=”M”>Man</option>
+       <option value=”W”>Woman</option>
+      </select>
+  </div>
+      <div>
+      <label for=”email”>Email:</label>
+      <input id=”email” type=”text”>
+   </div>
+  <div>
+      <label for=”satisfaccion”>Everything is clear in this web? </label>
+      <select id=”satisf”>
+        <option value=”1”>1-Very Bad</option>
+        <option value=”2”>2</option>
+        <option value=”3”>3</option>
+        <option value=”4”>4</option>
+        <option value=”5”>5-Very Good</option>
+      </select>
+  </div>
+  <div>
+    <label for=”comentario”>Do you have any doubt?</label>
+    <textarea id=”comentario”></textarea>
+  </div>
+  <p>Now, please send us your questions here:</p>   
+      <p>
+      <input type=”submit” value=”Enviar”>
+      </p>
+</form>
+        </nav>
+    </body>
+</html>
+        
